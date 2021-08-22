@@ -2,21 +2,41 @@ body{
     background-color:lightpink;
 }
 #header{
-    width:97%;
+    width:auto;
     height:600px;
     background-image:url('../images/image1.jpg');
     background-size:cover;
     background-repeat: no-repeat;
     border: 2px white;
-    margin: 20px;
+    margin:20px;
 }
-.navbar .container{
-    margin: 20px;
-    height: 45px; /*set height of navbar*/
+.navbar{
+    margin:0;
+    /*height: 45px; /*set height of navbar*/
+    background: rgba(255, 255, 255, 0.3);
   }
   @media (min-width: 800px) and (max-width: 850px) { /* set features of nav bar when it collapses */
     .navbar:not(.top-nav-collapse) {
-      background: #1C2331 !important;
+      background: black !important;
       height: 45px;
     }
   }
+  #brand-name{
+      color:black;
+      font-size:40px;
+  }
+  .nav-link {
+    color:black !important;
+    }
+    .navbar input[type="text"] {
+        padding: 6px;
+        border: none;
+        font-size: 17px;
+        width: 100%;
+      }
+      .searchbar {
+        width: 15%;
+      }
+      #cuisines{
+          background:saddlebrown;
+      }
