@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/mdb.css"><!--used for carousel-->
         <link href="css/styles.css" rel="stylesheet" type="text/css">
         <script src="js/scripts.js"></script>
     </head>
@@ -54,6 +55,117 @@
         </div>
         <div class="container-fluid" id="cuisines">
             <h4>Popular Cuisines</h4>
+            <p>The cuisines featured include:</p>
+            <div id="menu">
+                <!--Carousel Wrapper-->
+                <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+                    <!--Indicators-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                        <li data-target="#multi-item-example" data-slide-to="1"></li>
+                        <li data-target="#multi-item-example" data-slide-to="2"></li>
+                        <li data-target="#multi-item-example" data-slide-to="3"></li>
+                        <li data-target="#multi-item-example" data-slide-to="4"></li>
+                    </ol>
+                    <!--/.Indicators-->
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                        <!--First slide-->
+                        <div class="carousel-item active">
+                            <div class="col-md-4">
+                                <div class="card md-2" id="card0">
+                                    <img src="images/burger1.jpg" class="card-img-top" alt="bbqbeef" style="height: 16rem;">
+                                    <div class="card-body" style="height: 5rem;">
+                                        <h5 class="card-title">Burgers</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card md-2" id="card1">
+                                    <img src="images/african1.jpg" class="card-img-top" alt="bbqc" style="height: 16rem;">
+                                    <div class="card-body" style="height: 5rem;">
+                                        <h5 class="card-title">African</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card" id="card2">
+                                    <img src="images/chinese1.jpg" class="card-img-top" alt="bbqpork" style="height: 16rem;">
+                                    <div class="card-body" style="height: 5rem;">
+                                        <h5 class="card-title">Chinese</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.First slide-->
+                        
+                        <!--Second slide-->
+                        <div class="carousel-item">
+                            <div class="col-md-4">
+                                <div class="card md-2" id="card3">
+                                    <img src="images/italian2.jpg" class="card-img-top" alt="chicken-tikka" style="height: 16rem;">
+                                    <div class="card-body" style="height: 5rem;">
+                                        <h5 class="card-title">Italian</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card md-2" id="card4">
+                                    <img src="images/mex1.jpg" class="card-img-top" alt="gamberi" style="height: 16rem;">
+                                    <div class="card-body" style="height: 5rem;">
+                                        <h5 class="card-title">Mexican</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card md-2" id="card5">
+                                    <img src="images/seafood3.jpg" class="card-img-top" alt="grilledpork" style="height: 16rem;">
+                                    <div class="card-body" style="height: 5rem;">
+                                        <h5 class="card-title">Seafood</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Second slide-->
+                    
+                        <!--Third slide-->
+                        <div class="carousel-item">
+                            <div class="col-md-4">
+                                <div class="card md-2" id="card6">
+                                    <img src="images/spanish1.jpg" class="card-img-top" alt="hawaiian" style="height: 16rem;">
+                                    <div class="card-body" style="height: 5rem;">
+                                        <h5 class="card-title">Spanish</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card md-2" id="card7">
+                                    <img src="images/veg1.jpg" class="card-img-top" alt="margharita" style="height: 16rem;">
+                                    <div class="card-body" style="height: 5rem;">
+                                        <h5 class="card-title">Vegeterian</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card md-2" id="card8">
+                                    <img src="images/marinara.jpg" class="card-img-top" alt="marinara" style="height: 16rem;">
+                                    <div class="card-body" style="height: 5rem;">
+                                        <h5 class="card-title">Marinara</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Third slide-->
+                    </div>
+                    <!--/.Slides-->
+                </div>    <!--/.Carousel Wrapper-->
+            </div>
+        </div>
+        <div class="container-fluid" id="socials">
+            <span><i class="fab fa-facebook icon_facebook" style="font-size:30px" ></i></span>
+            <span><i class="fab fa-twitter" style="font-size:30px"></i></span>
+            <span><i class="fab fa-instagram icon_instagram" style="font-size:30px"></i></span>
+            <div class="bottom-left"> &copy; 2021. EatBite. All Rights Reserved.</div>
         </div>
     </body>
 </html>
