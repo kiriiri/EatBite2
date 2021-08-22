@@ -27,6 +27,7 @@ body{
   }
   .nav-link {
     color:black !important;
+    font-weight:bold;
     }
     .navbar input[type="text"] {
         padding: 6px;
@@ -37,6 +38,37 @@ body{
       .searchbar {
         width: 15%;
       }
-      #cuisines{
-          background:saddlebrown;
+      #cuisine {
+        background-color: saddlebrown;
+        text-align: center;
+        margin:20px;
+      }
+      #menu{
+        padding-right: 12%;
+        padding-left: 12%;
+        text-align: center;
+      }
+      .carousel-inner{
+        padding-bottom: 1%;
+      }
+      .carousel-multi-item .carousel-indicators li{
+       /*style carousel indicators*/
+        background-color: white;
+        height: 1rem;
+        width: 1rem;
+      }
+      .carousel-multi-item .carousel-indicators .active{
+       /* style active carousel indicator*/
+        background-color: white;
+        height: 1.25rem;
+        width: 1.25rem;
+      }
+      h4{
+        font-weight: bold;
+      }
+      .features{
+        font-weight:bold;
+      }
+      #socials {
+        text-align: center;
       }
