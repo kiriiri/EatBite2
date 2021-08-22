@@ -1,0 +1,22 @@
+body{
+    background-color:lightpink;
+}
+#header{
+    width:97%;
+    height:600px;
+    background-image:url('../images/image1.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    border: 2px white;
+    margin: 20px;
+}
+.navbar .container{
+    margin: 20px;
+    height: 45px; /*set height of navbar*/
+  }
+  @media (min-width: 800px) and (max-width: 850px) { /* set features of nav bar when it collapses */
+    .navbar:not(.top-nav-collapse) {
+      background: #1C2331 !important;
+      height: 45px;
+    }
+  }
