@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/jpg" href="images/lorna/icon.jpg"></link>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Be Listed</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--allows for importing of fontawesome icons -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <!-- Google font-->
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 border">
+                <div class="jumbotron shadow-lg mb-5 rounded">
+                    <div class="header">
+                        <h5>Get listed<div class="fullstop">.</div></h5></div>
+                        <div class="row container">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-8 container">
+                                <form id="listForm" action="find.html">
+                                    <div class="form-group">
+                                        <label for="listName">Full Name</label>
+                                        <input type="text" class="form-control" id="listName" placeholder="alphabetical letters only" pattern="[a-zA-Z ]+" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="restaurantName">What is your restaurant Name?</label>
+                                        <input type="text" class="form-control" id="restaurantName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="listEmail">Email address</label>
+                                    <input type="email" class="form-control" id="listEmail" aria-describedby="emailHelp" placeholder="abcd@efgh" required>
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phoneNumber">Phone Number</label>
+                                    <input type="number" class="form-control" id="phoneNumber" required>
+                                </div>
+                                <div id="error"></div><br>
+                                <button type="submit" class="btn btn-outline-default" id="listMe">List me!</button>
+                            </form>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</body>
+</html>
