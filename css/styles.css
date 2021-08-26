@@ -1,5 +1,5 @@
 body{
-    background-color:lightpink;
+  background-color:whitesmoke;
 }
 #header{
     width:auto;
@@ -53,13 +53,13 @@ body{
       }
       .carousel-multi-item .carousel-indicators li{
        /*style carousel indicators*/
-        background-color: white;
+        background-color: black;
         height: 1rem;
         width: 1rem;
       }
       .carousel-multi-item .carousel-indicators .active{
        /* style active carousel indicator*/
-        background-color: white;
+        background-color: black;
         height: 1.25rem;
         width: 1.25rem;
       }
@@ -72,9 +72,44 @@ body{
       #socials {
         text-align: center;
       }
-      /* LIST */
+      /*CONTACT US*/
+#contactus{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: white;
+  background-image: url("../images/lorna/miss-zhang-jz0xIgcwyL0-unsplash.jpg");
+  background-size: cover;
+}
+#contactus img{
+  object-fit: cover;
+  height: auto;
+}
+#contactus .btn{
+  background: transparent !important;
+  color: white;
+  font-weight: bolder;
+  padding: 3%;
+  font-size: 20px;
+}
+h3{
+  padding-top: 3%;
+  font-size: 50px;
+  padding-bottom: 1%;
+}
+#message{
+  color: white;
+  background: transparent;
+}
+.contactcontent{
+  padding: 4%;
+}
+/*CONTACT US*/
+
+/* LIST */
 .content{ /*position form in page*/
   padding: 5%;
+  font-weight:bold;
 }
 .container{
   padding: 0;
@@ -105,7 +140,7 @@ body{
   font-size: 75px;
   font-family: 'Playfair Display', serif;
   border-radius: 10px;
-  background-image: url('../images/lorna/blue.jpg');
+  background-image: url('../images/blue.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
