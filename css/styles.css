@@ -72,3 +72,77 @@ body{
       #socials {
         text-align: center;
       }
+      /* LIST */
+.content{ /*position form in page*/
+  padding: 5%;
+}
+.container{
+  padding: 0;
+}
+.border{ /*round border edges*/
+  border-radius: 10px;
+}
+.jumbotron{ /*style jumbotron*/
+  text-align: center;
+  padding:0;
+  padding-bottom: 4%;
+  background-color: transparent;
+}
+.row{
+  margin: 0;
+}
+.col-md-6{
+  padding: 0;
+}
+.jumbotron .header{
+  padding-left: 0;
+  color: white;
+}
+.jumbotron h5{
+  width: 100%;
+  padding: 5%;
+  padding-bottom: 6%;
+  font-size: 75px;
+  font-family: 'Playfair Display', serif;
+  border-radius: 10px;
+  background-image: url('../images/lorna/blue.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+div.fullstop{ /*make fullstop bigger than the rest of the text*/
+  display: inline;
+  font-size: 100px;
+}
+.col-md-8{
+  padding: 2%;
+}
+.custom-control{
+  text-align: left;
+}
+.mb-5{
+  margin-bottom:0 !important;
+}
+.btn-outline-default{
+  background:transparent;
+  border-color:#fd1d1d;
+  color: #fd1d1d;
+}
+#photogProfile{
+  display: none;
+}
+input#listImage{ /*styling image input box*/
+  text-align: left;
+  display: block;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+/* LIST */
