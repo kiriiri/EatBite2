@@ -39,7 +39,10 @@ body{
         width: 15%;
       }
       #cuisine {
-        background-color: saddlebrown;
+        background-color:lightgray;
+        border:2px white;
+        width:auto;
+        height:500px;
         text-align: center;
         margin:20px;
       }
