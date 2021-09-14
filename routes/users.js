@@ -2,7 +2,8 @@ import express from 'express';
 
 const router = express.Router();
 
-router.get('/users', (req, res) => {
+// All routes in here are starting with /users //
+router.get('/', (req, res) => {
     res.send('Hello');
 });
 
