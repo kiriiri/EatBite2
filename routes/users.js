@@ -23,6 +23,13 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
+    console.log('POST ROUTE REACHED');
+
+    console.log(req.body);
+
+    //users.push(); //
+
+    res.send('POST ROUTE REACHED');
     
 });
 
