@@ -112,6 +112,11 @@ body{
       #socials {
         text-align: center;
       }
+      #aboutus{
+        padding-right: 20%;
+        padding-left: 20%;
+        text-align: center;
+    }
 
 /* NEW RESTAURANTS*/
 #new {

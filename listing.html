@@ -32,40 +32,44 @@
                         <div class="row container">
                             <div class="col-md-2"></div>
                             <div class="col-md-8 container">
-                                <form id="listForm" action="find.html">
+                                <form action="/list_me" method="POST">
                                     <div class="form-group">
-                                        <label for="listName">Full Name</label>
-                                        <input type="text" class="form-control" id="listName" placeholder="alphabetical letters only" pattern="[a-zA-Z ]+" required>
+                                        <label for="listName">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="alphabetical letters only" pattern="[a-zA-Z ]+" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="listName">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" placeholder="alphabetical letters only" pattern="[a-zA-Z ]+" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="restaurantName">What is your restaurant Name?</label>
                                         <input type="text" class="form-control" id="restaurantName" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="listEmail">Email address</label>
-                                    <input type="email" class="form-control" id="listEmail" aria-describedby="emailHelp" placeholder="abcd@efgh" required>
-                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                                </div>
-                                <div class="form-group">
-                                    <label for="phoneNumber">Phone Number</label>
-                                    <input type="number" class="form-control" id="phoneNumber" required>
-                                </div>
-                                <div id="error"></div><br>
-                                <button type="submit" class="btn btn-outline-default" id="listMe">List me!</button>
-                            </form>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="listEmail">Email address</label>
+                                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="abcd@efgh" required>
+                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phoneNumber">Phone Number</label>
+                                        <input type="number" class="form-control" id="phoneNumber" required>
+                                    </div>
+                                    <div id="error"></div><br>
+                                    <button type="submit" class="btn btn-outline-default" id="listMe">List me!</button>
+                                </form>
+                            </div>
+                            <div class="col-md-2"></div>
                         </div>
-                        <div class="col-md-2"></div>
                     </div>
                 </div>
+                <div class="col-md-3"></div>
             </div>
-            <div class="col-md-3"></div>
         </div>
-    </div>
-    <div class="container-fluid" id="socials">
-        <span><i class="fab fa-facebook icon_facebook" style="font-size:30px" ></i></span>
-        <span><i class="fab fa-twitter" style="font-size:30px"></i></span>
-        <span><i class="fab fa-instagram icon_instagram" style="font-size:30px"></i></span>
-        <div class="bottom-left"> &copy; 2021. EatBite. All Rights Reserved.</div>
-    </div>
+        <div class="container-fluid" id="socials">
+            <span><i class="fab fa-facebook icon_facebook" style="font-size:30px" ></i></span>
+            <span><i class="fab fa-twitter" style="font-size:30px"></i></span>
+            <span><i class="fab fa-instagram icon_instagram" style="font-size:30px"></i></span>
+            <div class="bottom-left"> &copy; 2021. EatBite. All Rights Reserved.</div>
+        </div>
 </body>
 </html>

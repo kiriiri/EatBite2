@@ -4,9 +4,7 @@ import cors from 'cors';
 
 import usersRoutes from './routes/users.js';
 
-//const { express } = require('pg');
-
-import Client from 'pg';
+import db from './database.js';
 
 const app = express();
 const PORT = process.env.PORT || 5055;
@@ -21,17 +19,26 @@ app.use('/users', usersRoutes);
 
 app.get('/', (req, res) => res.send('Hello from homepage.'));
 
-const db = new Client({
-    user: 'postgres',
-    host: 'localhost',
-    database: 'EatBite',
-    password: 'Kiri2018',
-    port: 5432,
-  })
-  db.connect()
-  db.query('SELECT NOW()', (err, res) => {
-    console.log(err, res)
-    client.end()
-  })
+db.getConnection()
+.then(conn => {
+    conn.query("SELECT 1 as val")
+    .then((rows) => {
+        console.log(rows);//[{val: 1}, meta:...]
+        //Table must have been created before
+        //"CREATE TABLE myTable(id int, val varchar(255))"
+        return conn.query("INSERT INTO myTable value (?,?)",[1,"mariadb"]);
+    })
+    .then((res) => {
+        console.log(res);//{affectedRows: 1, insertId: 1, warningStatus:0}
+        conn.end();
+    })
+    .catch(err => {
+        //handle error
+        console.log(err);
+        conn.end();
+    })
+}).catch(err => {
+    //not connected
+});
 
 app.listen(PORT, () => console.log(`Server running on port: http://localhost:${PORT}`));
