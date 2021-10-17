@@ -32,27 +32,27 @@
                         <div class="row container">
                             <div class="col-md-2"></div>
                             <div class="col-md-8 container">
-                                <form action="/list_me" method="POST">
+                                <form action="http://localhost/connection/connect.php" method="post">
                                     <div class="form-group">
                                         <label for="listName">First Name</label>
-                                        <input type="text" class="form-control" id="firstName" placeholder="alphabetical letters only" pattern="[a-zA-Z ]+" required>
+                                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="alphabetical letters only" pattern="[a-zA-Z ]+" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="listName">Last Name</label>
-                                        <input type="text" class="form-control" id="lastName" placeholder="alphabetical letters only" pattern="[a-zA-Z ]+" required>
+                                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="alphabetical letters only" pattern="[a-zA-Z ]+" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="restaurantName">What is your restaurant Name?</label>
-                                        <input type="text" class="form-control" id="restaurantName" required>
+                                        <input type="text" class="form-control" id="restaurantName" name="restaurantName" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="listEmail">Email address</label>
-                                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="abcd@efgh" required>
+                                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="abcd@efgh" required>
                                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                                     </div>
                                     <div class="form-group">
                                         <label for="phoneNumber">Phone Number</label>
-                                        <input type="number" class="form-control" id="phoneNumber" required>
+                                        <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" required>
                                     </div>
                                     <div id="error"></div><br>
                                     <button type="submit" class="btn btn-outline-default" id="listMe">List me!</button>
